@@ -6,8 +6,8 @@ import { ClerkProvider } from "@clerk/nextjs";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Lms-platform",
-  description: "Lms platform project",
+  title: "Vishwa-Lms-platform",
+  description: "Lms platform for project",
 };
 
 export default function RootLayout({
@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
+        <link rel="icon" href="/meta-logo.svg" />
         <body className={inter.className}>{children}</body>
       </html>
     </ClerkProvider>
